@@ -1,3 +1,4 @@
 /.idea/
 /venv/
 __pycache__/
+/confluence_command_line.egg-info/

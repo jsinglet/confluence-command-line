@@ -1,8 +1,12 @@
 from setuptools import setup
 
+with open('README.md') as f:
+    long_description = ''.join(f.readlines()[1:]).strip()
+
 setup(
     name='confluence-command-line',
-    version='0.1',
+    long_description=long_description,
+    version='0.3',
     entry_points = {
         'console_scripts': ['ccl=confluencecommandline.confluence_command_line:main'],
     },

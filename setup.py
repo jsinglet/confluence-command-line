@@ -1,12 +1,13 @@
 from setuptools import setup
+import codecs
 
-with open('README.md') as f:
-    long_description = ''.join(f.readlines()[1:]).strip()
+with codecs.open('README.rst', encoding="utf-8") as f:
+    long_description = ''.join(f.readlines()[2:]).strip()
 
 setup(
     name='confluence-command-line',
     long_description=long_description,
-    version='0.3',
+    version='0.4',
     entry_points = {
         'console_scripts': ['ccl=confluencecommandline.confluence_command_line:main'],
     },
